@@ -20,7 +20,7 @@ class FormContainer extends React.Component {
     render()
     {
         return(
-            <FormComponent handleChange={this.handleChange} initialCapital={this.state.initialCapital} monthlyPay={this.state.monthlyPay} percent={this.state.percent} capitalization={this.state.capitalization} inflation={this.state.inflation} years={this.state.years} />
+            <FormComponent handleChange={this.handleChange} data={this.state} />
         )
     }
 }

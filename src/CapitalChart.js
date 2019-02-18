@@ -12,12 +12,12 @@ function CapitalChart(props) {
             data={{
                 labels: labels,
                 datasets: [{
-                    label: 'Bez inflacji',
+                    label: 'Without inflation',
                     data: props.data.noInflation,
                     backgroundColor: 'rgba(137, 123, 175, 0.2)'
                 },
                 {
-                    label: 'Z inflacją',
+                    label: 'With inflation',
                     data: props.data.inflation,
                     backgroundColor: 'rgba(255, 99, 132, 0.2)'
                 }]
@@ -33,7 +33,7 @@ function CapitalChart(props) {
                     callbacks: {
                         label: function(tooltipItem, data) {
                             let labelArray = tooltipItem.yLabel.toString().split(".");
-                            return labelArray[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " zł";
+                            return labelArray[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                         }
                     }
                 }

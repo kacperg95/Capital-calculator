@@ -4,12 +4,13 @@ var Count = require("./modules/Count")
 
 function Calculator(props)
 {
-    var initialCapital = Number(props.initialCapital)
-    var percent = Number(props.percent)
-    var monthlyPay = Number(props.monthlyPay)
-    var capitalization = props.capitalization;
-    var inflation = Number(props.inflation);
-    var years = Number(props.years);
+
+    var initialCapital = Number(String(props.data.initialCapital).replace(",","."));
+    var percent = Number(String(props.data.percent).replace(",","."));
+    var monthlyPay = Number(String(props.data.monthlyPay).replace(",","."));
+    var capitalization = props.data.capitalization;
+    var inflation = Number(String(props.data.inflation).replace(",","."));
+    var years = Number(String(props.data.years).replace(",","."));
 
     var results = Count.capital(initialCapital, monthlyPay, percent, capitalization, inflation,  years)
 

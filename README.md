@@ -2,4 +2,4 @@
 
 Calculator that I made for my personal purposes and for React practise.
 
-![Screen](https://gyazo.com/ffea9808b20251e4b6d7494ab7ed2446)
+![Screen](https://i.gyazo.com/959149388a3cdb49dd8b7093b1b98069.png)
